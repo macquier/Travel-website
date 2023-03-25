@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="container container--header">
+        <nav class="nav">
+          <a href="#!" class="logo"
+            ><img src="./img/nav/logo.svg" alt="2Rism"
+          /></a>
+
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link nav-list__link--active">home</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">hotels</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">restaurants</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">tours</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">destinations</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">activities</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">contact</a>
+            </li>
+          </ul>
+
+          <div class="user">
+            <div class="user__content">
+              <span class="user__greeting">Holla,</span>
+              <span class="user__name">Ales Nesetril</span>
+            </div>
+            <div class="user__avatar">
+              <img class="user__img" src="./img/nav/user.jpg" alt="Customer" />
+            </div>
+          </div>
+
+          <button class="mobile-nav-btn">
+            <div class="nav-icon"></div>
+          </button>
+        </nav>
+
+        <div class="header__content">
+          <h1 class="header__title">Discover the most engaging places</h1>
+          <button class="button button-huge">
+            <img src="./img/header-icons/world.svg" alt="" />
+            Discover on 3D Globe
+          </button>
+        </div>
+
+        <form class="form">
+          <div class="form__input-wrapper form__input--location">
+            <label for="location" class="form__label">Location</label>
+            <input
+              placeholder="Explore nearby destinations"
+              type="text"
+              class="form__input"
+              id="location"
+            />
+          </div>
+
+          <div class="form__input-wrapper form__input--activity">
+            <label for="activity" class="form__label">Activity</label>
+            <select name="activity" id="activity" class="form__select">
+              <option value="all">All Activities</option>
+              <option value="culture">Culture</option>
+              <option value="sport">Sport</option>
+              <option value="extreme">Extreme</option>
+            </select>
+          </div>
+
+          <div class="form__input-wrapper form__input--date">
+            <label for="date" class="form__label">When</label>
+            <input
+              type="text"
+              placeholder="Choose a Date"
+              class="form__input"
+              id="date"
+            />
+          </div>
+
+          <div class="form__input-wrapper form__input--guests">
+            <label for="guests" class="form__label">Guests</label>
+            <select name="guests" id="guests" class="form__select">
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests or more</option>
+            </select>
+          </div>
+
+          <button class="button button--search">
+            <img src="./img/header-icons/search.svg" alt="" />
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <main class="main">
+      <!--Destinations-->
+      <section class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="title1">Popular destinations</h2>
+          </div>
+          <div class="section__cards section__cards--dest">
+            <div class="card">
+              <a href="#!" class="card__link"></a>
+              <img src="./img/destination/img-1.jpg" alt="" class="card__img" />
+              <h3 class="card__title">Big Sur</h3>
+              <a href="#location" class="card__location">California, USA</a>
+            </div>
+
+            <div class="card">
+              <a href="#!" class="card__link"></a>
+              <img src="./img/destination/img-2.jpg" alt="" class="card__img" />
+              <h3 class="card__title">Prescott</h3>
+              <a href="#location" class="card__location">Arizona, USA</a>
+            </div>
+
+            <div class="card">
+              <a href="#!" class="card__link"></a>
+              <img src="./img/destination/img-3.jpg" alt="" class="card__img" />
+              <h3 class="card__title">Fort Mayers</h3>
+              <a href="#location" class="card__location">Florida, USA</a>
+            </div>
+
+            <div class="card">
+              <a href="#!" class="card__link"></a>
+              <img src="./img/destination/img-4.jpg" alt="" class="card__img" />
+              <h3 class="card__title">Tucson</h3>
+              <a href="#location" class="card__location">Arizona, USA</a>
+            </div>
+
+            <div class="card">
+              <a href="#!" class="card__link"></a>
+              <img src="./img/destination/img-5.jpg" alt="" class="card__img" />
+              <h3 class="card__title">St. Joseph</h3>
+              <a href="#location" class="card__location">Michigan, USA</a>
+            </div>
+
+            <div class="card">
+              <a href="#!" class="card__link"></a>
+              <img src="./img/destination/img.jpg" alt="" class="card__img" />
+              <h3 class="card__title">Madrid</h3>
+              <a href="#location" class="card__location">Spain</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Hotels-->
+      <section class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="title1">Hotels and restaurants</h2>
+            <a href="#!" class="button-more"
+              >View all
+              <img src="./img/hotels/icons/arrow-right-line.svg" alt="Arrow" />
+            </a>
+          </div>
+
+          <div class="section__cards section__cards--hotel">
+            <div class="card">
+              <a href="#!" class="card__link"></a>
+              <img
+                src="./img/hotels/Frame 3.jpg"
+                alt=""
+                class="card__img card__img--hotel"
+              />
+              <h3 class="card__title card__title--hotel">
+                Monastero Santa Rosa Hotel & Spa
+              </h3>
+
+              <footer class="card__footer">
+                <a href="#map" class="card__location card__location--icon">
+                  Salerno, Italy
+                </a>
+                <div class="card__rating">
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                </div>
+              </footer>
+            </div>
+
+            <div class="card">
+              <a href="#!" class="card__link"></a>
+              <img
+                src="./img/hotels/Frame 3-1.jpg"
+                alt=""
+                class="card__img card__img--hotel"
+              />
+              <h3 class="card__title card__title--hotel">
+                Grand Hotel Tremezzo
+              </h3>
+
+              <footer class="card__footer">
+                <a href="#map" class="card__location card__location--icon">
+                  Lake Como, Italy
+                </a>
+                <div class="card__rating">
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                  <img src="./img/hotels/icons/star-empty.svg" alt="star" />
+                  <img src="./img/hotels/icons/star-empty.svg" alt="star" />
+                </div>
+              </footer>
+            </div>
+
+            <div class="card">
+              <a href="#!" class="card__link"></a>
+              <img
+                src="./img/hotels/Frame 3-2.jpg"
+                alt=""
+                class="card__img card__img--hotel"
+              />
+              <h3 class="card__title card__title--hotel">
+                The Oberoi Udaivilas, Udaipur
+              </h3>
+
+              <footer class="card__footer">
+                <a href="#map" class="card__location card__location--icon">
+                  Udaipur, India
+                </a>
+                <div class="card__rating">
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                  <img src="./img/hotels/icons/star-empty.svg" alt="star" />
+                </div>
+              </footer>
+            </div>
+
+            <div class="card">
+              <a href="#!" class="card__link"></a>
+              <img
+                src="./img/hotels/Frame 3-3.jpg"
+                alt=""
+                class="card__img card__img--hotel"
+              />
+              <h3 class="card__title card__title--hotel">AKA Beverly Hills</h3>
+
+              <footer class="card__footer">
+                <a href="#map" class="card__location card__location--icon">
+                  Los Angeles, United States
+                </a>
+                <div class="card__rating">
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                  <img src="./img/hotels/icons/star.svg" alt="star" />
+                  <img src="./img/hotels/icons/star-empty.svg" alt="star" />
+                  <img src="./img/hotels/icons/star-empty.svg" alt="star" />
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Tips-->
+      <section class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="title1">Travel tips and advice</h2>
+            <a href="#!" class="button-more"
+              >View all
+              <img src="./img/hotels/icons/arrow-right-line.svg" alt="Arrow" />
+            </a>
+          </header>
+
+          <div class="section__cards section__cards--2-in-row">
+            <div class="card card-tip">
+              <a href="#!" class="card__link"></a>
+              <img
+                src="img/tips/img-1.jpg"
+                alt=""
+                class="card__img card__img--tip"
+              />
+
+              <div class="card__desc">
+                <h3 class="card__title card__title--big">
+                  East Village Ice Cream Crawl
+                </h3>
+                <p class="card__text">
+                  We will stop at five different world-class ice cream shops on
+                  this 1.5 mile 1.5 hour tour. At each ice cream store we'll
+                  explore the story behind the business and see what makes the
+                  ice cream unique as you savor every…
+                </p>
+
+                <footer class="card__footer card__footer--wide">
+                  <a
+                    href="#"
+                    class="card__footer--link card__footer--link--date"
+                    >Today</a
+                  >
+                  <a
+                    href="#"
+                    class="card__footer--link card__footer--link--author"
+                    >Maria Philips</a
+                  >
+                  <a
+                    href="#"
+                    class="card__footer--link card__footer--link--comments"
+                    >2</a
+                  >
+                </footer>
+              </div>
+            </div>
+            <div class="card card-tip">
+              <a href="#!" class="card__link"></a>
+              <img src="img/tips/img-2.jpg" alt="" class="card__img" />
+
+              <div class="card__desc">
+                <h3 class="card__title card__title--big">
+                  Brooklyn Bridge cinematic photo walk
+                </h3>
+                <p class="card__text">
+                  This experience takes place at the Brooklyn Bridge Park and
+                  Brooklyn Bridge, but I’m always open to capture clients at
+                  different locations upon request for an additional charge.
+                </p>
+
+                <footer class="card__footer card__footer--wide">
+                  <a
+                    href="#!date"
+                    class="card__footer--link card__footer--link--date"
+                    >Today</a
+                  >
+                  <a
+                    href="#!author"
+                    class="card__footer--link card__footer--link--author"
+                    >James Calzoni</a
+                  >
+                  <a
+                    href="#!comments"
+                    class="card__footer--link card__footer--link--comments"
+                    >17</a
+                  >
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Activities-->
+      <section class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="title1">Activities</h2>
+            <a href="#!" class="button-more"
+              >View all
+              <img src="./img/hotels/icons/arrow-right-line.svg" alt="Arrow" />
+            </a>
+          </header>
+
+          <div class="section__cards section__cards--activities">
+            <div class="card">
+              <a href="#!" class="card__link"></a>
+              <img
+                src="img/activities/img.jpg"
+                alt=""
+                class="card__img card__img--activities"
+              />
+              <h3 class="card__title card__title--activities">Sailing</h3>
+            </div>
+
+            <div class="card">
+              <a href="#!" class="card__link"></a>
+              <img
+                src="img/activities/img-1.jpg"
+                alt=""
+                class="card__img card__img--activities"
+              />
+              <h3 class="card__title card__title--activities">Climbing</h3>
+            </div>
+
+            <div class="card">
+              <a href="#!" class="card__link"></a>
+              <img
+                src="img/activities/img-2.jpg"
+                alt=""
+                class="card__img card__img--activities"
+              />
+              <h3 class="card__title card__title--activities">Skiing</h3>
+            </div>
+
+            <div class="card">
+              <a href="#!" class="card__link"></a>
+              <img
+                src="img/activities/img-3.jpg"
+                alt=""
+                class="card__img card__img--activities"
+              />
+              <h3 class="card__title card__title--activities">Hiking</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--About us-->
+      <section class="section">
+        <div class="container">
+          <div class="about__us">
+            <div class="about-us__desc">
+              <h3 class="about-us__title">About us</h3>
+              <p class="about-us__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse a sapien justo. Nulla facilisis tristique imperdiet.
+                Nullam a placerat odio. Sed in ex augue. Aliquam porta
+                consectetur lorem sit amet ultrices. Class aptent taciti
+                sociosqu ad litora torquent per conubia nostra, per inceptos
+                himenaeos.
+              </p>
+              <div class="about-us__btn">
+                <a href="#!" class="button-more"
+                  >Read more
+                  <img
+                    src="./img/hotels/icons/arrow-right-line.svg"
+                    alt="Arrow"
+                  />
+                </a>
+              </div>
+            </div>
+            <img class="about-us__img" src="./img/about.jpg" alt="About" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__copyright">
+            <img src="./img/footer/logo.svg" alt="footer-logo" />
+            <p class="footer__text">
+              We always make our customers happy by providing as many choises as
+              possible
+            </p>
+            <ul class="footer__socials">
+              <li class="footer__social-item">
+                <a class="social__icon" href="#facebook">
+                  <img src="./img/footer/facebook.svg" alt="" />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="social__icon" href="#twitter">
+                  <img src="./img/footer/twitter.svg" alt="" />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="social__icon" href="#instagram">
+                  <img src="./img/footer/instagram.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav--wrapper">
+            <div class="footer__nav">
+              <h3 class="footer__nav--title">About</h3>
+              <ul class="footer__nav--list">
+                <li class="footer__nav--item">
+                  <a href="#!" class="footer__nav--link">About us</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a href="#!" class="footer__nav--link">Features</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a href="#!" class="footer__nav--link">News</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a href="#!" class="footer__nav--link">Menu</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h3 class="footer__nav--title">Company</h3>
+              <ul class="footer__nav--list">
+                <li class="footer__nav--item">
+                  <a href="#!" class="footer__nav--link">Why 2rism</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a href="#!" class="footer__nav--link">Partner with us</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a href="#!" class="footer__nav--link">FAQ</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a href="#!" class="footer__nav--link">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h3 class="footer__nav--title">Support</h3>
+              <ul class="footer__nav--list">
+                <li class="footer__nav--item">
+                  <a href="#!" class="footer__nav--link">Account</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a href="#!" class="footer__nav--link">Support Center</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a href="#!" class="footer__nav--link">Feedback</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a href="#!" class="footer__nav--link">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__subscribe">
+            <div class="footer__subscribe--title">
+              Subscribe on our destination review newsletters
+            </div>
+            <form action="" class="subscribe">
+              <div class="subscribe__input--wrapper">
+                <input
+                  type="email"
+                  class="subscribe__input"
+                  value="johndoe@gmail.com"
+                  required
+                />
+                <label class="subscribe__label" for="email">Your email</label>
+              </div>
+              <div class="subscribe__btn-wrapper">
+                <button class="button button--subscribe">
+                  <img src="./img/footer/arrow-small.svg" alt="arrow" />
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
